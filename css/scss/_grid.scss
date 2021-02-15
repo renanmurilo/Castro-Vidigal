@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    min-width: 320px;
+    font-size: 1rem;
+	color: #000;
+	font-family: 'Catamaran', 'Poppins', sans-serif;
+}
+
+.shell {
+	max-width: 1260px;
+	margin: 0 auto;
+
+	/* Mobile */
+	@media (max-width: 767px) {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.space {
+	height: 71px;
+}
