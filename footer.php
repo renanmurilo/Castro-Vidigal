@@ -27,8 +27,8 @@
 							</div>
 
 							<div class="text-footer">
-								<p><a href="" target="_blank" rel="noopener noreferrer">Benefícios: + 55 11 97479.5197</a></p>
-								<p><a href="" target="_blank" rel="noopener noreferrer">Outros: + 55 11 99647.0043</a></p>
+								<p>Benefícios: <a href="tel:+5511974795197">+ 55 11 97479.5197</a></p>
+								<p>Outros: <a href="tel:+5511996470043">+ 55 11 99647.0043</a></p>
 							</div>
 						</div>
 					</div>
@@ -37,15 +37,15 @@
 						<h3>ACOMPANHE NOSSAS REDES SOCIAIS</h3>
 
 						<div class="sociais">
-							<a href="https://www.instagram.com/castroevidigal/ " target="_blank" rel="noopener noreferrer">
+							<a href="https://www.instagram.com/castroevidigal/ " target="_blank">
 								<i class="ico-instagram-red"></i>
 							</a>
 
-							<a href="https://www.facebook.com/castroevidigal" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.facebook.com/castroevidigal/" target="_blank">
 								<i class="ico-facebook-red"></i>
 							</a>
 
-							<a href="https://www.linkedin.com/company/castroevidigal/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.linkedin.com/company/castroevidigal/?viewAsMember=true" target="_blank">
 								<i class="ico-linkedin-red"></i>
 							</a>
 						</div>
@@ -65,7 +65,7 @@
 		</div>
 
 		<div class="copy">
-			<p><?php bloginfo('name'); ?> Todos os direitos reservados®. Design por Eólica.</p>
+			<p><?php bloginfo('name'); ?> Todos os direitos reservados®. <a href="http://www.grupoeolica.com.br" target="_blank" rel="noopener noreferrer">Design por Eólica.</a></p>
 		</div>
 	</footer>
 

@@ -29,4 +29,23 @@ $(document).ready(() => {
 			},
 		},
 	});
+	
+	$(".slider-obrigado").addClass("owl-carousel").owlCarousel({
+		loop: false,
+		dots: true,
+		nav: true,
+		responsive: {
+			0: {
+				items: 2,
+				nav: true,
+				dots: false,
+				margin: 16,
+				autoWidth: 135
+			},
+			1260: {
+				items: 5,
+				margin: 28,
+			},
+		},
+	});
 })

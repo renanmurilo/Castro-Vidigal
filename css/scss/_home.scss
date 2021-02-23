@@ -108,7 +108,7 @@
             text-transform: uppercase;
             color: #D0011B;
             font-size: 34px;
-            font-weight: 300;
+            font-weight: 200;
             font-family: 'Poppins';
             text-align: center;
             margin-bottom: 104px;
@@ -179,7 +179,7 @@
 
                 h4 {
                     font-size: 24px;
-                    font-weight: 300;
+                    font-weight: 100;
                     color: #D0011B;
 
                     /* Mobile */
@@ -192,7 +192,7 @@
                 p {
                     color: #4A494A;
                     font-size: 18px;
-                    font-weight: 300;
+                    font-weight: 100;
                     line-height: 28px;
                     max-width: 336px;
                     margin-top: 7px;
@@ -270,7 +270,7 @@
 
                 h4 {
                     font-size: 24px;
-                    font-weight: 300;
+                    font-weight: 100;
                     color: #D0011B;
 
                     /* Mobile */
@@ -283,7 +283,7 @@
                 p {
                     color: #4A494A;
                     font-size: 18px;
-                    font-weight: 300;
+                    font-weight: 100;
                     line-height: 28px;
                     max-width: 350px;
                     margin-top: 7px;
@@ -408,7 +408,7 @@
                 h3 {
                     color: #4A494A;
                     font-size: 30px;
-                    font-weight: 300;
+                    font-weight: 100;
                     line-height: 40px;
                     max-width: 411px;
                     margin-bottom: 25px;
@@ -424,7 +424,7 @@
 
                 .sub-texto {
                     font-size: 24px;
-                    font-weight: 300;
+                    font-weight: 100;
                     color: #D0011B;
                     line-height: 34px;
                     max-width: 411px;
@@ -452,6 +452,12 @@
                 }
 
                 .pos-venda {
+
+                    /* Mobile */
+                    @media (max-width: 767px) {
+                        padding-left: 28px;
+                    }
+
                     .ico {
                         margin-right: 32px;
 
@@ -464,7 +470,7 @@
                     .text-pos {
                         h4 {
                             font-size: 24px;
-                            font-weight: 300;
+                            font-weight: 100;
                             color: #D0011B;
                             line-height: 34px;
                             max-width: 335px;
@@ -484,14 +490,14 @@
                             font-size: 20px;
                             color: #4A494A;
                             line-height: 28px;
-                            font-weight: 300;
+                            font-weight: 100;
                             max-width: 292px;
 
                             /* mobile */
                             @media (max-width: 767px) {
                                 font-size: 14px;
                                 line-height: 26px;
-                                max-width: 251px;
+                                max-width: 100%;
                                 margin: auto;
                                 position: relative;
                                 right: 50px;
@@ -504,9 +510,10 @@
                     margin-top: 75px;
                     margin-left: 31px;
 
-                    /* Mobile */
+                    /* mobile */
                     @media (max-width: 767px) {
                         margin-left: 0;
+                        padding-left: 28px;
                     }
 
                     .ico {
@@ -521,7 +528,7 @@
                     .text-suporte {
                         h4 {
                             font-size: 24px;
-                            font-weight: 300;
+                            font-weight: 100;
                             color: #D0011B;
                             line-height: 34px;
                             max-width: 335px; 
@@ -541,14 +548,14 @@
                             font-size: 20px;
                             color: #4A494A;
                             line-height: 28px;
-                            font-weight: 300;
+                            font-weight: 100;
                             max-width: 300px;
 
                             /* mobile */
                             @media (max-width: 767px) {
                                 font-size: 14px;
                                 line-height: 26px;
-                                max-width: 230px;
+                                max-width: 100%;
                                 margin: auto;
                                 position: relative;
                                 right: 50px;
@@ -630,7 +637,7 @@
                 text-align: center;
                 text-transform: uppercase;
                 font-size: 34px;
-                font-weight: 300;
+                font-weight: 200;
                 font-family: 'Poppins';
                 color: #D0011B;
                 margin-bottom: 20px;
@@ -640,7 +647,7 @@
                     font-size: 20px;
                     line-height: 30px;
                     max-width: 218px;
-                    font-weight: 500;
+                    font-weight: 200;
                     color: #4A494A;
                     text-align: left;
                     align-self: flex-start;
@@ -653,6 +660,7 @@
                 font-size: 18px;
                 max-width: 800px;
                 text-align: center;
+                font-weight: 100;
                 margin: auto;
                 line-height: 28px;
                 color: #4A494A;

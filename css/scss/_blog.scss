@@ -18,7 +18,7 @@
             font-size: 34px;
             text-transform: uppercase;
             color: #ED1B24;
-            font-weight: 300;
+            font-weight: 200;
             width: 100%;
             text-align: center;
             font-family: 'Poppins';
@@ -125,8 +125,8 @@
                     .text-desk {
                         font-size: 30px;
                         text-transform: uppercase;
-                        color: #ED1B24;
-                        font-weight: 300;
+                        color: #D0011B;
+                        font-weight: 200;
                         font-family: 'Poppins';
 
                         /* Mobile */
@@ -138,7 +138,7 @@
                     h3 {
                         font-size: 24px;
                         color: #4A494A;
-                        font-weight: 600;
+                        font-weight: 500;
                         margin-top: 15px;
                         max-width: 539px;
                         line-height: 32px;
@@ -152,7 +152,7 @@
                     p {
                         font-size: 18px;
                         color: #4A494A;
-                        font-weight: 400;
+                        font-weight: 300;
                         max-width: 539px;
                         margin-top: 19px;
 
@@ -212,7 +212,7 @@
             .content-post {
                 h3 {
                     font-size: 18px;
-                    color: #ED1B24;
+                    color: #D0011B;
                     text-transform: uppercase;
                     font-family: 'Poppins';
                     font-weight: 300;
@@ -220,8 +220,8 @@
                 }
 
                 h5 {
-                    color: #ED1B24;
-                    font-size: 12px;
+                    color: #D0011B;
+                    font-size: 10px;
                     text-transform: uppercase;
                     font-family: 'Poppins';
                     font-weight: 300;
@@ -229,7 +229,7 @@
                 }
 
                 p {
-                    font-size: 14px;
+                    font-size: 16px;
                     color: #4A494A;
                     font-weight: 400;
                     line-height: 19px;
@@ -262,7 +262,7 @@
                 .page-numbers {
                     font-size: 20px;
                     color: #4A494A;
-                    font-weight: 500;
+                    font-weight: 300;
                     margin: 0 20px;
 
                     /* Mobile */
@@ -273,6 +273,7 @@
 
                     &.current {
                         color: #ED1B24;
+                        font-weight: 500;
                     }
 
                     &.prev {
@@ -414,7 +415,7 @@
 
         h5 {
             font-size: 14px;
-            color: #4A494A;
+            color: #9B9A9B;
             font-weight: 300;
             font-family: 'Poppins';
             text-transform: uppercase;
@@ -431,7 +432,7 @@
         p {
             font-size: 18px;
             color: #4A494A;
-            font-weight: 500;
+            font-weight: 300;
             line-height: 24px;
         }
 
@@ -499,7 +500,7 @@
                     color: #4A494A;
                     text-transform: uppercase;
                     line-height: 19px;
-                    font-weight: 300;
+                    font-weight: 200;
                     margin-top: 14px;
                 }
             }

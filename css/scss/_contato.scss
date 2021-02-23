@@ -16,7 +16,7 @@
             font-family: 'Poppins';
             font-size: 34px;
             color: #D0011B;
-            font-weight: 300;
+            font-weight: 200;
             text-align: center;
             width: 100%;
             margin-bottom: 20px;
@@ -30,7 +30,7 @@
         h3 {
             color: #4A494A;
             font-size: 18px;
-            font-weight: 300;
+            font-weight: 100;
             text-align: center;
             margin-bottom: 45px;
 
@@ -97,7 +97,7 @@
                         .label-field {
                             width: 100%;
                             font-size: 18px;
-                            font-weight: 300;
+                            font-weight: 100;
                             color: #6D6D6D;
                             margin-bottom: 5px;
 
@@ -119,6 +119,7 @@
                             font-size: 15px;
                             color: #4A494A;
                             padding-left: 16px;
+                            font-weight: 100;
 
                             &::placeholder {
                                 color: #9B9A9B;
@@ -191,6 +192,7 @@
                                 background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MS45OTYgNDkxLjk5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkxLjk5NiA0OTEuOTk2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnPjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ4NC4xMzIsMTI0Ljk4NmwtMTYuMTE2LTE2LjIyOGMtNS4wNzItNS4wNjgtMTEuODItNy44Ni0xOS4wMzItNy44NmMtNy4yMDgsMC0xMy45NjQsMi43OTItMTkuMDM2LDcuODZsLTE4My44NCwxODMuODQ4ICAgIEw2Mi4wNTYsMTA4LjU1NGMtNS4wNjQtNS4wNjgtMTEuODItNy44NTYtMTkuMDI4LTcuODU2cy0xMy45NjgsMi43ODgtMTkuMDM2LDcuODU2bC0xNi4xMiwxNi4xMjggICAgYy0xMC40OTYsMTAuNDg4LTEwLjQ5NiwyNy41NzIsMCwzOC4wNmwyMTkuMTM2LDIxOS45MjRjNS4wNjQsNS4wNjQsMTEuODEyLDguNjMyLDE5LjA4NCw4LjYzMmgwLjA4NCAgICBjNy4yMTIsMCwxMy45Ni0zLjU3MiwxOS4wMjQtOC42MzJsMjE4LjkzMi0yMTkuMzI4YzUuMDcyLTUuMDY0LDcuODU2LTEyLjAxNiw3Ljg2NC0xOS4yMjQgICAgQzQ5MS45OTYsMTM2LjkwMiw0ODkuMjA0LDEzMC4wNDYsNDg0LjEzMiwxMjQuOTg2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojM0YzOTQ4IiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=) no-repeat;
                                 background-size: 10px;
                                 background-position: 95% 55%;
+                                font-weight: 100;
 
                                 /* Mobile */
                                 @media (max-width: 767px) {
@@ -203,6 +205,10 @@
                             }
                         }
                     }
+                }
+
+                .wpcf7 form.sent .wpcf7-response-output {
+                    border: none;
                 }
             }
 
@@ -225,7 +231,7 @@
                 .text-endereco {
                     font-size: 18px;
                     color: #6D6D6D;
-                    font-weight: 300;
+                    font-weight: 100;
                     max-width: 254px;
                     line-height: 30px;
                     margin-top: 10px;
@@ -246,17 +252,7 @@
                     .map-desk {
                         /* Mobile */
                         @media (max-width: 767px) {
-                            display: none;
-                        }
-                    }
-
-                    .map-mobile {
-                        display: none;
-                        
-                        /* Mobile */
-                        @media (max-width: 767px) {
-                            display: block;
-                            margin: auto;
+                            
                         }
                     }
                 }

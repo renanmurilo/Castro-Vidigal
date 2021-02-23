@@ -71,7 +71,7 @@
         h3 {
             font-size: 24px;
             color: #fff;
-            line-height: 39px;
+            line-height: 34px;
             max-width: 700px;
             margin: 10px auto;
             text-align: center;
@@ -118,7 +118,7 @@
         }
 
         h4 {
-            font-weight: 18px;
+            font-size: 18px;
             font-weight: 300;
             color: #4A494A;
             max-width: 718px;
@@ -168,7 +168,7 @@
                     font-size: 20px;
                     line-height: 24px;
                     color: #4A494A;
-                    font-weight: 400;
+                    font-weight: 300;
 
                     /* Mobile */ 
                     @media (max-width: 767px) {
@@ -326,7 +326,7 @@
                             font-size: 18px;
                             line-height: 28px;
                             color: #4A494A;
-                            font-weight: 400;
+                            font-weight: 200;
                             margin: auto auto 39px;
                             min-height: 112px;
 
@@ -434,7 +434,7 @@
                 max-width: 380px;
                 font-size: 24px;
                 color: #4A494A;
-                font-weight: 300;
+                font-weight: 200;
                 line-height: 38px;
                 margin-top: 26px;
 
@@ -514,6 +514,7 @@
                     max-width: 520px;
                     line-height: 38px;
                     margin-bottom: 20px;
+                    font-weight: 200;
 
                     /* Mobile */
                     @media (max-width: 767px) {
@@ -526,11 +527,16 @@
 
                 .link-btn {
                     font-family: 'Poppins';
-                    color: #D0011B;
+                    color: #ED1B24;
                     font-weight: 700;
                     font-size: 14px;
                     text-transform: uppercase;
                     margin-bottom: 25px;
+
+                    .ico-arrow-right-red {
+                        position: relative;
+                        bottom: 2px;
+                    }
                 }
             }
         }
