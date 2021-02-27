@@ -104,14 +104,14 @@ function post_fixed() {
 				<div class="image-destaque">
 					<h5 class="date-mobile"><?php the_time('d/m/Y') ?></h5>
 					<h4 class="text-mobile">Destaque</h4>
-					<img src="<?php the_post_thumbnail_url(); ?>" alt="" >
+					<img src="<?php the_field('imagem-post'); ?>" alt="" >
 				</div>
 
 				<div class="content-destaque">
 					<h5 class="date-desk"><?php the_time('d/m/Y') ?></h5>
 					<h4 class="text-desk">Destaque</h4>
 					<h3><?php the_title() ?></h3>
-					<p><?php $excerpt= get_the_excerpt(); echo substr($excerpt, 0, 370,); ?>.</p>
+					<p><?php $excerpt= get_the_excerpt(); echo substr($excerpt, 0, 1000,); ?></p>
 				</div>
 			</a>
 		</div>

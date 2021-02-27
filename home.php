@@ -26,13 +26,13 @@
 					<div class="grid-posts">
 						<a href="<?php the_permalink(); ?>">
 							<div class="image-post">
-								<img src="<?php the_post_thumbnail_url(); ?>" alt="" >
+								<img src="<?php the_field('imagem-post'); ?>" alt="" >
 							</div>
 
 							<div class="content-post">
 								<h3><?php the_title() ?></h3>
 								<h5><?php the_time('d/m/Y') ?></h5>
-								<p><?php $excerpt= get_the_excerpt(); echo substr($excerpt, 0, 190,); ?>.</p>
+								<p><?php $excerpt= get_the_excerpt(); echo substr($excerpt, 0, 1000,); ?></p>
 							</div>
 						</a>
 					</div>
