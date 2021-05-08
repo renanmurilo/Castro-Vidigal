@@ -59,7 +59,7 @@ gulp.task('pluginjs', pluginJS);
 // Função para iniciar o browser
 function browser() {
   browserSync.init({
-    proxy: 'castro.local'
+    proxy: 'castroevidigal.local'
   });
 }
 

@@ -104,7 +104,7 @@
         flex-direction: column;
         width: 100%;
         align-items: center;
-        margin-top: 95px;
+        margin-top: 91px;
         margin-bottom: 80px;
 
         /* Mobile */
@@ -118,7 +118,7 @@
             font-weight: 200;
             font-family: 'Poppins';
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
 
             /* Mobile */
             @media (max-width: 767px) {
@@ -176,8 +176,6 @@
                     justify-content: center;
                     flex-wrap: wrap;
                     align-items: center;
-                    cursor: default;
-                    pointer-events: none!important;
 
                     .image-box {
                         height: 72px;
@@ -216,7 +214,7 @@
             /* Mobile */
             @media (max-width: 767px) {
                 .owl-stage-outer {
-                    max-width: 85%;
+                    max-width: 80%;
                     margin: auto;
                 }
             }
@@ -224,7 +222,7 @@
             .owl-nav {
                 position: absolute;
                 top: 32%;
-                z-index: 9;
+                z-index: -1;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -246,7 +244,7 @@
 
                             /* Mobile */
                             @media (max-width: 767px) {
-                                right: 40px;
+                                left: 8px;
                             }
                         }
         
@@ -257,7 +255,7 @@
 
                             /* Mobile */
                             @media (max-width: 767px) {
-                                right: 40px;
+                                left: 8px;
                             }
                         }
                     }
@@ -270,7 +268,7 @@
 
                             /* Mobile */
                             @media (max-width: 767px) {
-                                right: 0;
+                                right: 8px;
                             }
                         }
         
@@ -281,7 +279,7 @@
 
                             /* Mobile */
                             @media (max-width: 767px) {
-                                right: 0;
+                                right: 8px;
                             }
                         }
                     }
@@ -325,11 +323,11 @@
                     display: inline-block;
                     margin: 0 7px;
                     position: relative;
-                    background: #D7D7D7;
-        
+                    background: transparent;
+                    border: 2px solid #D7D7D7;
+                    
                     &.active {
-                        border: 2px solid #D7D7D7;
-                        background: transparent;
+                        background: #D7D7D7;
                         width: 10px;
                         height: 10px;
                         border-radius: 100%;

@@ -8,6 +8,10 @@ body {
 	font-family: 'Catamaran', 'Poppins', sans-serif;
 }
 
+body, html {
+	scroll-behavior: smooth;
+}
+
 .shell {
 	max-width: 1260px;
 	margin: 0 auto;

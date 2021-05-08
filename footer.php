@@ -1,3 +1,5 @@
+	<?php $home = get_page_by_title('Home'); ?>
+
 	<footer>
 		<div class="logo-footer">
 			<i class="ico-logo-footer"></i>
@@ -11,15 +13,15 @@
 					<div class="grid">
 						<h3>ENDEREÇO</h3>
 
-						<p>Rua Caconde, 248 – Jardim Paulista</p>
-						<p>São Paulo / SP – CEP 01425-010</p>
+						<p><?php the_field('endereco_footer', $home) ;?></p>
+						<p><?php the_field('cep_footer', $home) ;?></p>
 					</div>
 
 					<div class="grid">
 						<h3>ENTRE EM CONTATO</h3>
 
-						<p><a href="mailto:contato@castroevidigal.com.br">contato@castroevidigal.com.br</a></p>
-						<p><a href="tel:+551130513132">+55 11 3051.3132</a></p>
+						<p><a href="mailto:contato@castroevidigal.com.br"><?php the_field('email_footer', $home) ;?></a></p>
+						<p><?php the_field('telefone_footer', $home) ;?></p>
 
 						<div class="btn-whats">
 							<div class="ico">
@@ -27,8 +29,8 @@
 							</div>
 
 							<div class="text-footer">
-								<p>Benefícios: <a href="tel:+5511974795197">+ 55 11 97479.5197</a></p>
-								<p>Outros: <a href="tel:+5511996470043">+ 55 11 99647.0043</a></p>
+								<p>Benefícios: <?php the_field('telefone_beneficios_footer', $home) ;?> </p>
+								<p>Outros: <?php the_field('telefone_outros_footer', $home) ;?></p>
 							</div>
 						</div>
 					</div>
@@ -55,9 +57,9 @@
 						<h3>NÓS APOIAMOS</h3>
 
 						<div class="apoio">
-							<i class="ico-apoio"></i>
+							<img class="image_1" src="<?php the_field('image_1', $home); ?>" alt="">
 
-							<i class="ico-tucca"></i>
+							<img class="image_tucca" src="<?php the_field('image_tucca', $home); ?>" alt="">
 						</div>
 					</div>
 				</div>
@@ -69,9 +71,39 @@
 		</div>
 	</footer>
 
+	
 	<!-- Inicio Wordpress Footer -->
 	<?php wp_footer(); ?>
 	<!-- Final Wordpress Footer -->
+
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/mask/dist/jquery.mask.min.js"></script>
+	<script type="text/javascript">
+        $(function(){
+            $('.money2').mask("#.##0,00", {reverse: true});
+			$('.date').mask('00/00/0000');
+			$('.cep').mask('00000-000');
+			$('.phone').mask('(00) 00000-0000');
+			$('.cpf').mask('000.000.000-00', {reverse: true});
+			$('.rg').mask('00-000-000-0', {reverse: true});
+			$('.cnpj').mask('00.000.000/0000-00', {reverse: true});
+        })
+    </script>
+
+	<script src="https://villa.segfy.com/dist/residential-bundle.js"
+        data-token="<TOKEN_CORRETORA>"
+        data-container="formResidencial"
+        data-images-path="img/seguradoras"
+        data-print-results="true"
+    >
+	</script>
+
+	<script src="https://villa.segfy.com/dist/vehicle-bundle.js"
+	    	data-token="<TOKEN_CORRETORA>"
+	    	data-container="formAuto"
+	    	data-images-path="img/seguradoras"
+			data-print-results="true"
+		>
+	</script>
 
 	</body>
 </html>

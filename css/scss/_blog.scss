@@ -185,8 +185,21 @@
         .grid-posts {
             max-width: 396px;
             min-height: 410px;
-            margin-right: 33px;
-            margin-bottom: 90px;
+            margin-right: 14px;
+            margin-left: 14px;
+            margin-top: 90px;
+
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+
+            &:nth-child(3) {
+                margin-top: 0;
+            }
 
             &:nth-child(3n) {
                 margin-right: 0;
@@ -201,10 +214,11 @@
             }
 
             .image-post { 
-                max-width: 391px;
+                width: 100%;
+                height: 255px;
                 
                 img {
-                    height: 255px;
+                    height: 100%;
                 }
             }
 
@@ -242,7 +256,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        margin: 15px auto 50px;
+        margin: auto;
 
         /* Mobile */
         @media(max-width: 767px) {
@@ -336,6 +350,8 @@
         }
 
         .image-single {
+            opacity: .7;
+
             img {
                 width: 100%;
                 
@@ -431,6 +447,10 @@
             color: #4A494A;
             font-weight: 300;
             line-height: 24px;
+
+            a {
+                color: #EC1C23;
+            }
         }
 
         .btn-description {

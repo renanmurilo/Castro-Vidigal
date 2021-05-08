@@ -9,7 +9,7 @@
 				<img src="<?php the_post_thumbnail_url(); ?>" alt="" >
 			</div>
 
-			<a href="http://previewbsagency.com.br/castrovidigal/blog" class="btn-blog">
+			<a href="/blog" class="btn-blog">
 				<i class="ico-arrow-left"></i> Blog
 			</a>
 

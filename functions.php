@@ -6,7 +6,7 @@ function castro_scripts() {
 	wp_deregister_script('jquery');
 
 	// Registra o jQuery Novo
-	wp_register_script( 'jquery', get_template_directory_uri() . '/js/libs/jquery-1.11.2.min.js', [], "1.11.2", true );
+	wp_register_script( 'jquery', get_template_directory_uri() . '/js/libs/jquery.js', [], "3.4.1", true );
 	// Rigistra o plugin do slider
 	wp_register_script( 'plugins-script', get_template_directory_uri() . '/js/plugins/owl.carousel.min.js', ['jquery'], false, true);
 	
@@ -72,7 +72,7 @@ function the_single_post() {
 		<div class="grid-posts">
 			<a href="<?php the_permalink(); ?>">
 				<div class="image-post">
-					<img src="<?php the_post_thumbnail_url(); ?>" alt="" >
+					<img src="<?php the_field('imagem-post'); ?>" alt="" >
 				</div>
 
 				<div class="content-post">
@@ -119,5 +119,95 @@ function post_fixed() {
     <?php }
     wp_reset_postdata();
 }
+
+/**
+ * Remove posts fixos.
+ *
+ * Remove posts fixos da consulta principal apenas na front-page e na home
+ */
+function teo_remove_sticky( $query = false ) {
+
+	// Verifica se a consulta está sendo realizada na front-page ou na home
+	if ( @is_front_page() || @is_home() ) { 
+		// Remove os sticky posts da consulta (posts fixos)
+		$query->set(
+			'post__not_in',
+			get_option( 'sticky_posts' )
+		);
+	}
+
+} // teo_remove_sticky
+
+// Adiciona a ação
+add_action('pre_get_posts','teo_remove_sticky');
+
+
+// Posts pessoais
+function custom_post_type_pessoais() {
+	register_post_type('pessoais', array(
+		'label' => 'Pessoais',
+		'description' => 'Pessoais',
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'capability_type' => 'post',
+		'map_meta_cap' => true,
+		'hierarchical' => false,
+		'rewrite' => array('slug' => 'pessoais', 'with_front' => true),
+		'query_var' => true,
+		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
+
+		'labels' => array (
+			'name' => 'Pessoais',
+			'singular_name' => 'Pessoais',
+			'menu_name' => 'Pessoais',
+			'add_new' => 'Adicionar Novo',
+			'add_new_item' => 'Adicionar Novo Pessoais',
+			'edit' => 'Editar',
+			'edit_item' => 'Editar Pessoais',
+			'new_item' => 'Novo Pessoais',
+			'view' => 'Ver Pessoais',
+			'view_item' => 'Ver Pessoais',
+			'search_items' => 'Procurar Pessoais',
+			'not_found' => 'Nenhum Pessoais Encontrado',
+			'not_found_in_trash' => 'Nenhum Pessoais Encontrado no Lixo',
+		)
+	));
+}
+add_action('init', 'custom_post_type_pessoais');
+
+// Posts Empresariais
+function custom_post_type_empresariais() {
+	register_post_type('empresariais', array(
+		'label' => 'Empresariais',
+		'description' => 'Empresariais',
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'capability_type' => 'post',
+		'map_meta_cap' => true,
+		'hierarchical' => false,
+		'rewrite' => array('slug' => 'empresariais', 'with_front' => true),
+		'query_var' => true,
+		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
+
+		'labels' => array (
+			'name' => 'Empresariais',
+			'singular_name' => 'Empresariais',
+			'menu_name' => 'Empresariais',
+			'add_new' => 'Adicionar Novo',
+			'add_new_item' => 'Adicionar Novo Empresariais',
+			'edit' => 'Editar',
+			'edit_item' => 'Editar Empresariais',
+			'new_item' => 'Novo Empresariais',
+			'view' => 'Ver Empresariais',
+			'view_item' => 'Ver Empresariais',
+			'search_items' => 'Procurar Empresariais',
+			'not_found' => 'Nenhum Empresariais Encontrado',
+			'not_found_in_trash' => 'Nenhum Empresariais Encontrado no Lixo',
+		)
+	));
+}
+add_action('init', 'custom_post_type_empresariais');
 
 ?>
